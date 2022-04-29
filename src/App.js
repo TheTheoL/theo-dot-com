@@ -1,11 +1,10 @@
 
-
 //imported components
-
+import AboutMe from './pages/AboutMe';
 function App() {
   return (
     <div className="App">
-      <h1>A.T. Lufkin</h1>
+      <AboutMe />
     </div>
   );
 }
