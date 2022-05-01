@@ -1,13 +1,15 @@
 import React from "react";
 //Page Components
-import About from "../components/About";
+import AboutSection from "../components/AboutSection";
 import Services from "../components/Services";
+import FAQ from "../components/FAQ";
 
 export default function AboutMe() {
     return (
         <>
-            <About />
+            <AboutSection />
             <Services />
+            <FAQ />
         </>
     );
 }
