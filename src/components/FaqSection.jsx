@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FAQ() {
+export default function FaqSection() {
     return (
         <div className='faq'>
             <h2>Any Questions <span>FAQ</span></h2>
