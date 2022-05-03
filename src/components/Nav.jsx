@@ -17,6 +17,7 @@ export default function Nav() {
                     <Link to="/contact">Contact Me</Link>
                 </li>
             </ul>
+
         </StyledNav>
     )
 }
@@ -27,10 +28,12 @@ const StyledNav = styled.div`
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10rem;
-    background: #473b65;
+    padding: 1rem;
+    background: white;
+    border-bottom: 3px solid black;
+
     a {
-        color: white;
+        color: black;
         text-decoration: none;
         
     }

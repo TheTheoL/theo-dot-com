@@ -54,6 +54,7 @@ export default function ServicesSection() {
 
 //instead of stating a .div with styled, we can add parentheseis and insert 'About' that automatically imports all the styling from that styled component.
 const Services = styled(About)`
+color: black;
 h2 {
     padding-bottom: 2rem;
 }

@@ -41,6 +41,7 @@ export default function FaqSection() {
 
 const Faq = styled(About)`
     display: block;
+    color: black;
     span {
         display: block;
     }
