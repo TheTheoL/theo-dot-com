@@ -1,16 +1,35 @@
 import React from 'react';
 import home1 from '../img/home1.png';
-//Styled
-import styled from 'styled-components';
 import { About, Description, Image, Hide } from '../styles';
+//framer motion
+import { motion } from 'framer-motion';
 
 export default function AboutSection() {
+
+    //FramerMotion
+    const titleAnimation = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1, transition: { duration: 2 } },
+    };
+    const container = {
+        hidden: { x: 100 },
+        show: { x: 0 },
+    }
+
     return (
         <About>
             <Description>
-                <div className="title">
+                <motion.div
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                    className="title"
+                >
                     <Hide>
-                        <h2>I strive to make</h2>
+                        <motion.h2
+                            variants={titleAnimation}
+                            initial="hidden"
+                            animate="show">I strive to make</motion.h2>
                     </Hide>
                     <Hide>
                         <h2>your <span>frontend</span> development</h2>
@@ -18,7 +37,7 @@ export default function AboutSection() {
                     <Hide>
                         <h2>better.</h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>
                     Contact me for any development ideas you have.
                 </p>
@@ -33,7 +52,7 @@ export default function AboutSection() {
     );
 };
 
-//Styled Component
+
 
 
 
