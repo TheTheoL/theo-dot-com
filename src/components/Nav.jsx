@@ -35,7 +35,7 @@ const StyledNav = styled.div`
     a {
         color: black;
         text-decoration: none;
-        
+        font-weight: bold;
     }
     ul {
         display: flex;
