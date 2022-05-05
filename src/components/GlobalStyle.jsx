@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle `
     body {
         background: white ;
         font-family: 'Inter', sans-serif;
-        padding: 0 10rem;
+        
     }
 
     button {

@@ -17,7 +17,6 @@ export default function MovieDetail() {
         );
         if (currentMovie[0]) setMovie(currentMovie[0]);
     }, [movies, url]);
-    console.log(movie);
     return (
         <>
             {movie && (

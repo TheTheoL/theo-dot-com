@@ -29,11 +29,11 @@ const StyledNav = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: white;
-    border-bottom: 3px solid black;
+    background: black;
+    padding: 0 10rem;
 
     a {
-        color: black;
+        color: white;
         text-decoration: none;
         font-weight: bold;
     }
@@ -44,7 +44,7 @@ const StyledNav = styled.div`
     #logo {
         font-size: 1.8rem;
         font-family: 'Lobster', cursive;
-        font-weight: lighter;
+       
     }
     li {
         padding-left: 10rem;

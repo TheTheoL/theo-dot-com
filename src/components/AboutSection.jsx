@@ -1,8 +1,10 @@
 import React from 'react';
-import home1 from '../img/home1.png';
+import aboutbanner from '../img/aboutbanner.jpg';
 import { About, Description, Image, Hide } from '../styles';
 //framer motion
 import { motion } from 'framer-motion';
+import { titleAnimation, fade, photoAnimation } from '../Animation';
+
 
 export default function AboutSection() {
 
@@ -12,23 +14,24 @@ export default function AboutSection() {
             <Description>
                 <motion.div>
                     <Hide>
-                        <motion.h2>I strive to make</motion.h2>
+                        <motion.h2 variants={titleAnimation}>I strive to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2>your <span>frontend</span> development</motion.h2>
+                        <motion.h2 variants={titleAnimation}>your <span>frontend</span> development</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2>better.</motion.h2>
+                        <motion.h2 variants={titleAnimation}>better.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>
+                <motion.p variants={fade}>
                     Contact me for any development ideas you have.
-                </p>
-                <button>Contact Me</button>
+                </motion.p>
+                <motion.button variants={fade}>Contact Me</motion.button>
             </Description>
             <Image>
-                <img src={home1} alt="" />
+                <motion.img variants={photoAnimation} initial='hidden' animate='show' src={aboutbanner} alt="" />
             </Image>
+
         </About>
 
 

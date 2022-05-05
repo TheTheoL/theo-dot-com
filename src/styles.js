@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 //Layout styling 
 
+
 export const About = styled.div `
     min-height: 90vh;
     display: flex;
@@ -9,15 +10,18 @@ export const About = styled.div `
     justify-content: space-between;
     padding: 5rem 10rem;
     color: black;
+    background-image: url("./img/aboutbanner.jpg");
 `;
 export const Description = styled.div `
     flex: 1;
     padding-right: 5rem;
+    z-index: 2;
     h2 {
         font-weight: lighter;
     }
 `;
 export const Image = styled.div `
+    z-index: 2;
     flex: 1;
     overflow: hidden;
     img {

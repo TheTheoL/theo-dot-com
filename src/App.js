@@ -13,18 +13,20 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <div className="App">
 
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
-        <Routes location={location} key={location.pathname}>
-          <Route exact path="/" element={<AboutMe />} />
+        <Routes
+        // location={location} key={location.pathname}
+        >
+          <Route path="/" exact element={<AboutMe />} />
           <Route path="/work" exact element={<MyWork />} />
-          <Route path="/work/:id" element={<MovieDetail />} />
-          <Route path="/contact" element={<ContactMe />} />
+          <Route path="/work/:id" exact element={<MovieDetail />} />
+          <Route path="/contact" exact element={<ContactMe />} />
         </Routes>
       </AnimatePresence>
 
