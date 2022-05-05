@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import { MovieState } from '../movieState';
+//Animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../Animation';
 
 export default function MovieDetail() {
     const url = useLocation();
@@ -9,15 +12,21 @@ export default function MovieDetail() {
     const [movie, setMovie] = useState(null);
 
     useEffect(() => {
-        const currentMovie = movies.filter((stateMovie) => stateMovie.url === url.pathname);
-        setMovie(currentMovie[0]);
-
+        const currentMovie = movies.filter(
+            (stateMovie) => stateMovie.url === url.pathname
+        );
+        if (currentMovie[0]) setMovie(currentMovie[0]);
     }, [movies, url]);
     console.log(movie);
     return (
         <>
             {movie && (
-                <Details>
+                <motion.div
+                    variants={pageAnimation}
+                    initial="hidden"
+                    animate="show"
+                    exit="exit"
+                >
                     <Headline>
                         <h2>{movie.title}</h2>
                         <img src={movie.mainImg} alt="" />
@@ -30,7 +39,7 @@ export default function MovieDetail() {
                     <ImageDisplay>
                         <img src={movie.secondaryImg} alt="movie" />
                     </ImageDisplay>
-                </Details>
+                </motion.div>
             )}
         </>
     )

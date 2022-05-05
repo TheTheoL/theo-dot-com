@@ -13,7 +13,11 @@ import { pageAnimation } from '../Animation';
 
 export default function MyWork() {
     return (
-        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
+        <Work
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit">
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
