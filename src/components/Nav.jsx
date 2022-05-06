@@ -29,9 +29,12 @@ const StyledNav = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: black;
+    background: #0c0c0c;
+    opacity: 0.75;
     padding: 0 10rem;
-
+    position: sticky;
+    top: 0;
+    z-index: 10;
     a {
         color: white;
         text-decoration: none;

@@ -4,17 +4,18 @@ import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
 import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
-import home2 from '../img/home2.png';
+
+import aboutbanner from '../img/aboutbanner.jpg';
 //Styles
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
 import { useScroll } from './useScroll';
-import { fade } from '../Animation';
+import { scrollReveal } from '../Animation';
 
 export default function ServicesSection() {
     const [element, controls] = useScroll();
     return (
-        <Services variants={fade} animate={controls} ref={element} initial={'hidden'}>
+        <Services variants={scrollReveal} animate={controls} ref={element} initial={'hidden'}>
             <Description>
                 <h2>High <span>quality</span> Web Development</h2>
                 <Cards>
@@ -49,7 +50,7 @@ export default function ServicesSection() {
                 </Cards>
             </Description>
             <Image>
-                <img src={home2} alt="fancy camera" />
+                <img src={aboutbanner} alt="fancy camera" />
             </Image>
         </Services>
     )

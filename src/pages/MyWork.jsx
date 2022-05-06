@@ -8,10 +8,13 @@ import goodtimes from '../img/goodtimes-small.png';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation, fade, photoAnimation, LineAnimation, slider, sliderContainer } from '../Animation';
+import { useScroll } from '../components/useScroll';
 
 
 
 export default function MyWork() {
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
     return (
         <Work
             variants={pageAnimation}
@@ -24,6 +27,7 @@ export default function MyWork() {
                 <Frame3 variants={slider}></Frame3>
                 <Frame4 variants={slider}></Frame4>
             </motion.div>
+
             <Movie>
                 <motion.h2 variants={fade}>The Athlete</motion.h2>
                 <motion.div variants={LineAnimation} className="line"></motion.div>
@@ -33,16 +37,18 @@ export default function MyWork() {
                     </Hide>
                 </Link>
             </Movie>
-            <Movie>
+
+            <Movie ref={element} variants={fade} animate={controls} initial='hidden'>
                 <motion.h2 variants={fade}>The Racer</motion.h2>
-                <div className="line"></div>
+                <motion.div variants={LineAnimation} className="line"></motion.div>
                 <Link to="/work/the-racer">
                     <img src={theracer} alt="athlete" />
                 </Link>
             </Movie>
-            <Movie>
+
+            <Movie ref={element2} variants={fade} animate={controls2} initial='hidden'>
                 <motion.h2 variants={fade}>Good Times</motion.h2>
-                <div className="line"></div>
+                <motion.div variants={LineAnimation} className="line"></motion.div>
                 <Link to="/work/good-times">
                     <img src={goodtimes} alt="athlete" />
                 </Link>
@@ -59,7 +65,7 @@ const Work = styled(motion.div)`
         padding: 0.5rem 0rem;
     }
 `;
-const Movie = styled.div`
+const Movie = styled(motion.div)`
     padding-bottom: 3rem;
     .line {
         height: 0.5rem;

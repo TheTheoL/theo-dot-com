@@ -1,9 +1,9 @@
 import React from 'react';
-import aboutbanner from '../img/aboutbanner.jpg';
+import profile from '../img/profile.jpeg';
 import { About, Description, Image, Hide } from '../styles';
 //framer motion
 import { motion } from 'framer-motion';
-import { titleAnimation, fade, photoAnimation } from '../Animation';
+import { titleAnimation, scrollReveal, photoAnimation } from '../Animation';
 
 
 export default function AboutSection() {
@@ -23,13 +23,13 @@ export default function AboutSection() {
                         <motion.h2 variants={titleAnimation}>better.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>
+                <motion.p variants={scrollReveal}>
                     Contact me for any development ideas you have.
                 </motion.p>
-                <motion.button variants={fade}>Contact Me</motion.button>
+                <motion.button variants={scrollReveal}>Contact Me</motion.button>
             </Description>
             <Image>
-                <motion.img variants={photoAnimation} initial='hidden' animate='show' src={aboutbanner} alt="" />
+                <motion.img variants={photoAnimation} initial='hidden' animate='show' src={profile} alt="" />
             </Image>
 
         </About>

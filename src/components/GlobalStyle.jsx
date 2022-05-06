@@ -8,12 +8,13 @@ const GlobalStyle = createGlobalStyle `
         margin:0;
         padding: 0;
         box-sizing: border-box;
+        //this keeps the page from having an extra space of width that cause the page to scroll horizontally.
     }
 
     body {
         background: white ;
         font-family: 'Inter', sans-serif;
-        
+        overflow-x: hidden;
     }
 
     button {
