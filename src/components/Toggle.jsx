@@ -1,3 +1,5 @@
+//Toggle Component. Re-usable
+
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { titleAnimation } from '../Animation';
