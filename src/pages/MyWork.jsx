@@ -9,6 +9,7 @@ import goodtimes from '../img/goodtimes-small.png';
 import { motion } from 'framer-motion';
 import { pageAnimation, fade, photoAnimation, LineAnimation, slider, sliderContainer } from '../Animation';
 import { useScroll } from '../components/useScroll';
+import { ScrollTop } from '../components/ScrollTop';
 
 
 
@@ -53,6 +54,7 @@ export default function MyWork() {
                     <img src={goodtimes} alt="athlete" />
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     )
 }
