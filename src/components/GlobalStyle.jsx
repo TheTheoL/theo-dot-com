@@ -11,6 +11,14 @@ const GlobalStyle = createGlobalStyle `
         //this keeps the page from having an extra space of width that cause the page to scroll horizontally.
     }
 
+    html {
+        @media (max-width: 1300px) {
+            font-size: 65%;
+        }
+        
+        
+    }
+
     body {
         background: white ;
         font-family: 'Inter', sans-serif;

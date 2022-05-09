@@ -8,14 +8,14 @@ import ContactMe from './pages/ContactMe';
 import MyWork from './pages/MyWork';
 import MovieDetail from './pages/MovieDetail';
 //Scroll top
-
+import { ScrollTop } from './components/ScrollTop';
 
 //Router
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <div className="App">
 
@@ -24,12 +24,10 @@ function App() {
       <Nav />
       <AnimatePresence
         exitBeforeEnter
-        onExitComplete={() => {
-          window.scrollTo(0, 0);
-        }}
+
       >
         <Routes
-          location={location} key={location.pathname}
+        // location={location} key={location.pathname}
         >
           <Route path="/" exact element={<AboutMe />} />
           <Route path="/work" exact element={<MyWork />} />
