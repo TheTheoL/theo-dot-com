@@ -46,6 +46,11 @@ const ContactStyle = styled(motion.div)`
     color: #353535;
     min-height: 90vh;
     background: url('./img/aboutbanner.jpg');
+    @media (max-width: 1300px) {
+            padding: 2rem;
+            font-size: 1rem;
+            
+}
 `;
 const Title = styled.div`
     margin-bottom: 4rem;
