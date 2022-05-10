@@ -5,7 +5,7 @@ import diaphragm from '../img/diaphragm.svg';
 import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 
-import aboutbanner from '../img/aboutbanner.jpg';
+import react from '../img/react.jpg';
 //Styles
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
@@ -50,7 +50,7 @@ export default function ServicesSection() {
                 </Cards>
             </Description>
             <Image>
-                <img src={aboutbanner} alt="fancy camera" />
+                <img src={react} alt="fancy camera" />
             </Image>
         </Services>
     )

@@ -7,7 +7,7 @@ import {
 
 
 export const About = styled(motion.div)
-    `
+`
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@ export const About = styled(motion.div)
             text-align: center;
         }
 `;
-export const Description = styled.div`
+export const Description = styled.div `
     flex: 1;
     padding-right: 5rem;
     z-index: 2;
@@ -34,18 +34,20 @@ export const Description = styled.div`
             }
         }
 `;
-export const Image = styled.div`
+export const Image = styled.div `
     z-index: 2;
     flex: 1;
     overflow: hidden;
+    box-shadow: 22px 0px 0px -4px rgba(0,0,0,0.1);
     img {
         width: 100%;
         height: 80vh;
         object-fit: cover;
         border-radius: 20px;
+        
     }
 `;
 
-export const Hide = styled.div`
+export const Hide = styled.div `
     overflow: hidden;
 `

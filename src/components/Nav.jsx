@@ -47,6 +47,10 @@ const StyledNav = styled.div`
         color: white;
         text-decoration: none;
         font-weight: bold;
+        
+        &:hover {
+            border-bottom: 3px solid #F66B0E;
+        }
     }
     ul {
         display: flex;
@@ -60,6 +64,7 @@ const StyledNav = styled.div`
     li {
         padding-left: 10rem;
         position: relative;
+        
     }
     @media (max-width: 1000px) {
             flex-direction: column;
