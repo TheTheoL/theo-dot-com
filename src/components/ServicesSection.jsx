@@ -17,7 +17,7 @@ export default function ServicesSection() {
     return (
         <Services variants={scrollReveal} animate={controls} ref={element} initial={'hidden'}>
             <Description>
-                <h2>High <span>quality</span> Web Development</h2>
+                <h2>High <span>quality</span> development of websites and web applications using <span id='react'></span>React JS</h2>
                 <Cards>
                     <Card>
                         <div className="icon">
@@ -52,7 +52,7 @@ export default function ServicesSection() {
             <Image>
                 <img src={react} alt="fancy camera" />
             </Image>
-        </Services>
+        </Services >
     )
 }
 
@@ -66,10 +66,12 @@ p {
     width: 70%;
     padding: 1rem 0rem 2rem 0rem;
 }
+
 @media (max-width: 1300px) {
             display: block;
             
 }
+
 `;
 
 const Cards = styled.div`
