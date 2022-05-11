@@ -24,9 +24,7 @@ export default function Nav() {
                 <li>
                     <Link to="/contact">Contact Me</Link>
                 </li>
-                <li>
-                    <Link to="/slider">Slider</Link>
-                </li>
+
             </ul>
 
         </StyledNav>

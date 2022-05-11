@@ -3,6 +3,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnimation } from '../Animation';
 import styled from 'styled-components';
+import github from '../img/github-brands.svg';
+import linkedin from '../img/linkedin-brands.svg';
+import email from '../img/at-solid.svg';
+
 
 export default function ContactMe() {
     return (
@@ -14,28 +18,23 @@ export default function ContactMe() {
         >
             <Title>
                 <Hide>
-                    <motion.h2 variants={titleAnimation}>Get in Touch.</motion.h2>
+                    <motion.h1 variants={titleAnimation}>Get in Touch.</motion.h1>
                 </Hide>
             </Title>
             <div>
                 <Hide>
                     <Social variants={titleAnimation}>
-                        <Circle />
-                        <h2>Send Me A Message</h2>
+                        <img src={github} alt="" />
+                        <h2>Check out my Github</h2>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnimation}>
-                        <Circle />
+                        <img src={email} alt="" />
                         <h2>Send An Email</h2>
                     </Social>
                 </Hide>
-                <Hide>
-                    <Social variants={titleAnimation}>
-                        <Circle />
-                        <h2>Social Media</h2>
-                    </Social>
-                </Hide>
+
             </div>
         </ContactStyle>
     )
@@ -46,6 +45,14 @@ const ContactStyle = styled(motion.div)`
     color: #353535;
     min-height: 90vh;
     background: url('./img/aboutbanner.jpg');
+    img {
+        height: 2rem;
+        width: 2rem;
+        
+    }
+    h2 {
+        padding-left: 2rem;
+    }
     @media (max-width: 1300px) {
             padding: 2rem;
             font-size: 1rem;
@@ -53,6 +60,7 @@ const ContactStyle = styled(motion.div)`
 }
 `;
 const Title = styled.div`
+    font-size: 4rem;
     margin-bottom: 4rem;
     color: black;
     font-family: 'Lobster', cursive; 
@@ -60,12 +68,7 @@ const Title = styled.div`
 const Hide = styled.div`
     overflow: hidden;
 `;
-const Circle = styled.div`
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    background: #353535;
-`;
+
 const Social = styled(motion.div)`
     display: flex;
     align-items: center;

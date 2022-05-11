@@ -31,10 +31,10 @@ function App() {
         // location={location} key={location.pathname}
         >
           <Route path="/" exact element={<AboutMe />} />
-          <Route path="/work" exact element={<MyWork />} />
+          <Route path="/work" exact element={<Slider />} />
           <Route path="/work/:id" exact element={<MovieDetail />} />
           <Route path="/contact" exact element={<ContactMe />} />
-          <Route path="/slider" exact element={<Slider />} />
+
         </Routes>
       </AnimatePresence>
 
