@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 import ContactMe from './pages/ContactMe';
 import MyWork from './pages/MyWork';
 import MovieDetail from './pages/MovieDetail';
+import { Slider } from './components/Slider';
 //Scroll top
 import { ScrollTop } from './components/ScrollTop';
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/work" exact element={<MyWork />} />
           <Route path="/work/:id" exact element={<MovieDetail />} />
           <Route path="/contact" exact element={<ContactMe />} />
+          <Route path="/slider" exact element={<Slider />} />
         </Routes>
       </AnimatePresence>
 

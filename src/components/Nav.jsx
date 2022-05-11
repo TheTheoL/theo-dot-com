@@ -24,6 +24,9 @@ export default function Nav() {
                 <li>
                     <Link to="/contact">Contact Me</Link>
                 </li>
+                <li>
+                    <Link to="/slider">Slider</Link>
+                </li>
             </ul>
 
         </StyledNav>
@@ -48,9 +51,7 @@ const StyledNav = styled.div`
         text-decoration: none;
         font-weight: bold;
         
-        &:hover {
-            border-bottom: 3px solid #F66B0E;
-        }
+       
     }
     ul {
         display: flex;

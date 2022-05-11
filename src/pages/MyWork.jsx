@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation, fade, photoAnimation, LineAnimation, slider, sliderContainer } from '../Animation';
 import { useScroll } from '../components/useScroll';
 import { ScrollTop } from '../components/ScrollTop';
+import musicplayer from '../img/musicplayer.png';
 
 
 
@@ -44,6 +45,7 @@ export default function MyWork() {
                 <motion.div variants={LineAnimation} className="line"></motion.div>
                 <Link to="/work/the-racer">
                     <img src={theracer} alt="athlete" />
+                    <img src={musicplayer} alt="music" />
                 </Link>
             </Movie>
 

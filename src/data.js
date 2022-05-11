@@ -1,56 +1,43 @@
-export const featuredPortfolio = [{
+export const data = [{
         id: 1,
         title: "Interactive Registration Form",
-        img: "/assets/responsiveform.png"
+        image: "/img/responsiveform.png"
     },
     {
         id: 2,
         title: "Scoreboard",
-        img: "/assets/scoreboard.png"
+        image: "/img/scoreboard.png"
     },
     {
         id: 3,
         title: "To-Do List",
-        img: "/assets/to-do.png"
+        image: "/img/to-do.png"
     },
     {
         id: 4,
         title: "React Course Registration",
-        img: "/assets/fullstack.png"
+        image: "/img/fullstack.png"
     },
     {
         id: 5,
         title: "Quote Generator",
-        img: "/assets/4-landing.png"
+        image: "/img/4-landing.png"
     },
     {
         id: 6,
         title: "Employee Directory",
-        img: "/assets/8-landing.png"
-    },
-
-
-]
-
-export const reactProjects = [{
-        id: 1,
-        title: "Scoreboard",
-        img: "/assets/scoreboard.png"
+        image: "/img/8-landing.png"
     },
     {
-        id: 2,
-        title: "React Course Registration",
-        img: "/assets/fullstack.png"
-    },
-    {
-        id: 3,
+        id: 7,
         title: "Music Player",
-        img: "/assets/musicplayer.png"
+        image: "/img/musicplayer.png"
     },
-]
+    {
+        id: 8,
+        title: "React Portfolio",
+        image: "/img/portfoliowebsite.png"
+    }
 
-export const otherProjects = [{
-    id: 1,
-    title: "Mobile-first layout",
-    img: "/assets/responsivelayout.png"
-}, ]
+
+]

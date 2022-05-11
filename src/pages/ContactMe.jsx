@@ -54,7 +54,8 @@ const ContactStyle = styled(motion.div)`
 `;
 const Title = styled.div`
     margin-bottom: 4rem;
-    color: black; 
+    color: black;
+    font-family: 'Lobster', cursive; 
 `;
 const Hide = styled.div`
     overflow: hidden;
