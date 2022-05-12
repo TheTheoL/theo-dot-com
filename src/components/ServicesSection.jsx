@@ -52,7 +52,7 @@ export default function ServicesSection() {
             <Image>
                 <img src={react} alt="fancy camera" />
             </Image>
-        </Services >
+        </Services>
     )
 }
 
@@ -66,12 +66,10 @@ p {
     width: 70%;
     padding: 1rem 0rem 2rem 0rem;
 }
-
 @media (max-width: 1300px) {
             display: block;
             
 }
-
 `;
 
 const Cards = styled.div`

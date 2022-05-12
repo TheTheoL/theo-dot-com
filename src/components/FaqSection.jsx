@@ -14,11 +14,11 @@ export default function FaqSection() {
                 Any Questions<span>FAQ</span>
             </h2>
             <AnimateSharedLayout>
-                <Toggle title='How Do I Start?'>
+                <Toggle title='How Do You Start?'>
                     <div className="question">
 
                         <div className="answer">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                            <p>I start by getting to know my clients and what their creative and business needs are. Whither they need a website for their business or personal brand, I want to make sure I take the time to ask the right questions and work with them so they get a unique experiene working with me and getting a final product that is specifically tailored to them.</p>
                         </div>
 
                     </div>
@@ -26,14 +26,14 @@ export default function FaqSection() {
                 <Toggle title='Daily Schedule'>
                     <div className="question">
                         <div className="answer">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                            <p>I love my work and typically have a Monday-Saturday work week. It depends on what projects I have in the works and during my free time I like to learn new things that help me enhance my developer skills.</p>
                         </div>
                     </div>
                 </Toggle>
                 <Toggle title="What Skills Do You Have?">
                     <div className="question">
                         <div className="answer">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                            <p>My skills are in frontend development but I also have knowledge in backend work. HTML, CSS, and JavaScript are the foundations of web and app developement and I excel on all fronts specializing in React JS.</p>
                         </div>
                     </div>
                 </Toggle>
@@ -41,7 +41,7 @@ export default function FaqSection() {
                     <div className="question">
 
                         <div className="answer">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                            <p>I offer both design and frontend developement services.</p>
                         </div>
                     </div>
                 </Toggle>

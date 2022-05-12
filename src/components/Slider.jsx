@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import images from '../images';
+import { data } from '../data';
 import slider from '../slider.css';
-import { titleAnimation, scrollReveal, photoAnimation } from '../Animation';
+import { titleAnimation, scrollReveal, photoAnimation, pageAnimation } from '../Animation';
 
 export const Slider = () => {
 
@@ -15,7 +16,12 @@ export const Slider = () => {
     }, []);
 
     return (
-        <motion.div>
+        <motion.div
+            exit="exit"
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+        >
             <motion.h1 variants={titleAnimation} className='title'>My Work</motion.h1>
             <motion.div
                 ref={carousel}
@@ -29,7 +35,8 @@ export const Slider = () => {
                     {images.map(image => {
                         return (
                             <motion.div className='item' key={image}>
-                                <motion.img variants={photoAnimation} src={image} alt="photo" />
+                                <motion.img src={image} alt="photo" />
+
                             </motion.div>
                         );
                     })}
