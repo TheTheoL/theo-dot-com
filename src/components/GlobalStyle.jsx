@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle `
     }
 
     body {
-        background: white ;
+       
         font-family: 'Inter', sans-serif;
         overflow-x: hidden;
     }
@@ -35,7 +35,10 @@ const GlobalStyle = createGlobalStyle `
         color: black;
         transition: all 0.5s ease;
         font-family: 'Inter', sans-serif;
-        
+        &:hover{
+            background-color: #F66B0E;
+            color: white;
+        }
         
     }
     h2 {

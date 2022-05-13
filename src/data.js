@@ -1,7 +1,7 @@
 export const data = [{
         id: 1,
         title: "Interactive Registration Form",
-        image: "/img/responsiveform.png"
+        image: "./img/interactiveform.png"
     },
     {
         id: 2,
@@ -21,12 +21,12 @@ export const data = [{
     {
         id: 5,
         title: "Quote Generator",
-        image: "./img/4-landing.png"
+        image: "./img/randomquote.png"
     },
     {
         id: 6,
         title: "Employee Directory",
-        image: "./img/8-landing.png"
+        image: "./img/directory.png"
     },
     {
         id: 7,

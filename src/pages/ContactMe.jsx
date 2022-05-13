@@ -3,9 +3,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnimation } from '../Animation';
 import styled from 'styled-components';
-import github from '../img/github-brands.svg';
-import linkedin from '../img/linkedin-brands.svg';
-import email from '../img/at-solid.svg';
+import github from '../images/github-brands.svg';
+import linkedin from '../images/linkedin-brands.svg';
+import atsolid from '../images/at-solid.svg';
+//background image
+
 
 
 export default function ContactMe() {
@@ -15,6 +17,7 @@ export default function ContactMe() {
             initial="hidden"
             animate="show"
             exit="exit"
+
         >
             <Title>
                 <Hide>
@@ -30,7 +33,7 @@ export default function ContactMe() {
                 </Hide>
                 <Hide>
                     <Social variants={titleAnimation}>
-                        <img src={email} alt="" />
+                        <img src={atsolid} alt="" />
                         <h2>Send An Email</h2>
                     </Social>
                 </Hide>
@@ -44,14 +47,16 @@ const ContactStyle = styled(motion.div)`
     padding: 5rem 10rem;
     color: #353535;
     min-height: 90vh;
-    background: url('./img/aboutbanner.jpg');
+    
+    background-image: url('../img/city.jpg');
     img {
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 3rem;
         
     }
     h2 {
         padding-left: 2rem;
+        color: black;
     }
     @media (max-width: 1300px) {
             padding: 2rem;
@@ -67,6 +72,7 @@ const Title = styled.div`
 `;
 const Hide = styled.div`
     overflow: hidden;
+    
 `;
 
 const Social = styled(motion.div)`

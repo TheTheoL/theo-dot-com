@@ -4,9 +4,10 @@ import { useRef, useEffect, useState } from 'react';
 import images from '../images';
 import { data } from '../data';
 import slider from '../slider.css';
-import { titleAnimation, scrollReveal, photoAnimation, pageAnimation } from '../Animation';
+import { titleAnimation, pageAnimation } from '../Animation';
+import github from '../images/github-brands.svg';
 
-export const Slider = () => {
+export const MyWork = () => {
 
     const [width, setWidth] = useState(0);
     const carousel = useRef();
@@ -23,6 +24,7 @@ export const Slider = () => {
             animate="show"
         >
             <motion.h1 variants={titleAnimation} className='title'>My Work</motion.h1>
+            <motion.p>Welcome to my work page! These project can be </motion.p>
             <motion.div
                 ref={carousel}
                 className='carousel'
@@ -32,10 +34,14 @@ export const Slider = () => {
                     dragConstraints={{ right: 0, left: -width }}
                     className='inner-carousel'
                 >
-                    {images.map(image => {
+                    {data.map(data => {
                         return (
-                            <motion.div className='item' key={image}>
-                                <motion.img src={image} alt="photo" />
+                            <motion.div className='item' key={data.id}>
+                                <motion.img src={data.image} alt="photo" />
+                                <div className="icons">
+                                    <motion.img src={github} alt="photo" />
+                                    <h3>{data.title}</h3>
+                                </div>
 
                             </motion.div>
                         );

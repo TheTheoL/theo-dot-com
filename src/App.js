@@ -5,9 +5,8 @@ import GlobalStyle from './components/GlobalStyle';
 import AboutMe from './pages/AboutMe';
 import Nav from './components/Nav';
 import ContactMe from './pages/ContactMe';
-import MyWork from './pages/MyWork';
-import MovieDetail from './pages/MovieDetail';
-import { Slider } from './components/Slider';
+import { MyWork } from './components/MyWork';
+
 //Scroll top
 import { ScrollTop } from './components/ScrollTop';
 
@@ -31,8 +30,7 @@ function App() {
         // location={location} key={location.pathname}
         >
           <Route path="/" exact element={<AboutMe />} />
-          <Route path="/work" exact element={<Slider />} />
-          <Route path="/work/:id" exact element={<MovieDetail />} />
+          <Route path="/work" exact element={<MyWork />} />
           <Route path="/contact" exact element={<ContactMe />} />
 
         </Routes>

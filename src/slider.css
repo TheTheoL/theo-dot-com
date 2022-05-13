@@ -20,16 +20,35 @@
     border-radius: 2rem;
     pointer-events: none;
     object-fit: cover;
-    box-shadow: 38px 33px 15px 0px rgba(0,0,0,0.1);
+    
 }
 
 .inner-carousel {
     display: flex;
-   
+    padding-bottom: 4rem;
 }
 
 .carousel {
     cursor: grab;
     overflow: hidden;
     
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons img {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1rem;
+    justify-content: space-around;
+    
+}
+.icons h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }

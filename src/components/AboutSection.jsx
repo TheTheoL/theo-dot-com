@@ -1,8 +1,10 @@
 import React from 'react';
-import profile from '../img/profile.jpeg';
+import { Link } from 'react-router-dom';
+
 import { About, Description, Image, Hide } from '../styles';
 //framer motion
 import { motion } from 'framer-motion';
+import profile from '../images/profile.jpeg';
 import { titleAnimation, scrollReveal, photoAnimation } from '../Animation';
 
 
@@ -26,7 +28,7 @@ export default function AboutSection() {
                 <motion.p variants={scrollReveal}>
                     Contact me for any development ideas you have.
                 </motion.p>
-                <motion.button variants={scrollReveal}>Contact Me</motion.button>
+                <Link to="/contact"><motion.button variants={scrollReveal}>Contact Me</motion.button></Link>
             </Description>
             <Image>
                 <motion.img variants={photoAnimation} initial='hidden' animate='show' src={profile} alt="" />
