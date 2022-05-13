@@ -24,7 +24,9 @@ export const MyWork = () => {
             animate="show"
         >
             <motion.h1 variants={titleAnimation} className='title'>My Work</motion.h1>
-            <motion.p>Welcome to my work page! These project can be </motion.p>
+            <div className='intro'>
+                <motion.p variants={titleAnimation}>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. </motion.p>
+            </div>
             <motion.div
                 ref={carousel}
                 className='carousel'
