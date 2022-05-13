@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import images from '../images';
+
 import { data } from '../data';
 import slider from '../slider.css';
-import { titleAnimation, pageAnimation } from '../Animation';
+import { pageAnimation } from '../Animation';
 import github from '../images/github-brands.svg';
 
 export const MyWork = () => {
@@ -23,9 +23,9 @@ export const MyWork = () => {
             initial="hidden"
             animate="show"
         >
-            <motion.h1 variants={titleAnimation} className='title'>My Work</motion.h1>
+            <h1 className='title'>My Work</h1>
             <div className='intro'>
-                <motion.p variants={titleAnimation}>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. </motion.p>
+                <p>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. </p>
             </div>
             <motion.div
                 ref={carousel}
@@ -54,3 +54,5 @@ export const MyWork = () => {
 
     )
 }
+
+//styling

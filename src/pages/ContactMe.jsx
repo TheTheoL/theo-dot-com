@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnimation } from '../Animation';
@@ -27,14 +28,18 @@ export default function ContactMe() {
             <div>
                 <Hide>
                     <Social variants={titleAnimation}>
-                        <img src={github} alt="" />
-                        <h2>Check out my Github</h2>
+                        <a href="https://github.com/TheTheoL" target="_blank"><img src={github} alt="" /></a>
+
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnimation}>
                         <img src={atsolid} alt="" />
-                        <h2>Send An Email</h2>
+
+                    </Social>
+                    <Social variants={titleAnimation}>
+                        <a href="https://www.linkedin.com/in/theolufkin/" target="_blank"><img src={linkedin} alt="" /></a>
+
                     </Social>
                 </Hide>
 
@@ -50,10 +55,15 @@ const ContactStyle = styled(motion.div)`
     
     background-image: url('../img/city.jpg');
     img {
-        height: 3rem;
-        width: 3rem;
+        height: 6rem;
+        width: 6rem;
         
+        &:hover {
+            height: 8rem;
+            width: 8rem;
+        }
     }
+    
     h2 {
         padding-left: 2rem;
         color: black;
@@ -65,6 +75,8 @@ const ContactStyle = styled(motion.div)`
 }
 `;
 const Title = styled.div`
+    display: flex;
+    justify-content: center;
     font-size: 4rem;
     margin-bottom: 4rem;
     color: black;
@@ -77,6 +89,6 @@ const Hide = styled.div`
 
 const Social = styled(motion.div)`
     display: flex;
-    align-items: center;
+justify-content: center;
     padding-top: 2rem;
 `;

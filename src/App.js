@@ -8,10 +8,10 @@ import ContactMe from './pages/ContactMe';
 import { MyWork } from './components/MyWork';
 
 //Scroll top
-import { ScrollTop } from './components/ScrollTop';
+
 
 //Router
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         >
           <Route path="/" exact element={<AboutMe />} />
           <Route path="/work" exact element={<MyWork />} />
-          <Route path="/contact" exact element={<ContactMe />} />
+          <Route path="/contact" element={<ContactMe />} />
 
         </Routes>
       </AnimatePresence>
