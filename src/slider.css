@@ -7,7 +7,6 @@
 }
 
 
-
 .title {
     display: flex;
     font-family: 'Lobster', cursive;
@@ -63,3 +62,10 @@
     margin-left: 1rem;
 }
 
+.icons h3:hover {
+    color:rgb(239, 163, 87);
+}
+
+a {
+    text-decoration: none;
+}

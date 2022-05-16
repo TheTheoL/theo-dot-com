@@ -32,7 +32,7 @@ export default function Nav() {
 }
 
 const StyledNav = styled.div`
-    min-height: 10vh;
+    min-height: 7vh;
     display: flex;
     margin: auto;
     justify-content: space-between;

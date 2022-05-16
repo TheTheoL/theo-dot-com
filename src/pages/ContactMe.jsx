@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnimation } from '../Animation';
@@ -25,7 +25,7 @@ export default function ContactMe() {
                     <motion.h1 variants={titleAnimation}>Get in Touch.</motion.h1>
                 </Hide>
             </Title>
-            <div>
+            <div className='social-icons'>
                 <Hide>
                     <Social variants={titleAnimation}>
                         <a href="https://github.com/TheTheoL" target="_blank"><img src={github} alt="" /></a>
@@ -34,9 +34,11 @@ export default function ContactMe() {
                 </Hide>
                 <Hide>
                     <Social variants={titleAnimation}>
-                        <img src={atsolid} alt="" />
+                        <a href="mailto: theo.lufkin@gmail.com" target="_blank"><img src={atsolid} alt="" /></a>
 
                     </Social>
+                </Hide>
+                <Hide>
                     <Social variants={titleAnimation}>
                         <a href="https://www.linkedin.com/in/theolufkin/" target="_blank"><img src={linkedin} alt="" /></a>
 
@@ -52,15 +54,24 @@ const ContactStyle = styled(motion.div)`
     padding: 5rem 10rem;
     color: #353535;
     min-height: 90vh;
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    body {
+        overflow: hidden;
+    }
     background-image: url('../img/city.jpg');
     img {
-        height: 6rem;
-        width: 6rem;
+        height: 9rem;
+        width: 9rem;
         
         &:hover {
-            height: 8rem;
-            width: 8rem;
+            
         }
     }
     
@@ -84,11 +95,14 @@ const Title = styled.div`
 `;
 const Hide = styled.div`
     overflow: hidden;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 `;
 
 const Social = styled(motion.div)`
     display: flex;
-justify-content: center;
+    justify-content: center;
     padding-top: 2rem;
 `;

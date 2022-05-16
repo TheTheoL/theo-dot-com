@@ -25,6 +25,7 @@ export const Description = styled.div `
     padding-right: 5rem;
     z-index: 2;
     h2 {
+        font-size: 6rem;
         font-weight: lighter;
     }
     button {

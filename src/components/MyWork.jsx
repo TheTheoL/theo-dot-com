@@ -25,7 +25,7 @@ export const MyWork = () => {
         >
             <h1 className='title'>My Work</h1>
             <div className='intro'>
-                <p>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. </p>
+                <p>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. Click the titles to go to each projects GitHub live page</p>
             </div>
             <motion.div
                 ref={carousel}
@@ -41,8 +41,8 @@ export const MyWork = () => {
                             <motion.div className='item' key={data.id}>
                                 <motion.img src={data.image} alt="photo" />
                                 <div className="icons">
-                                    <motion.img src={github} alt="photo" />
-                                    <h3>{data.title}</h3>
+
+                                    <a href={data.live_page} target="_blank"><h3>{data.title}</h3></a>
                                 </div>
 
                             </motion.div>

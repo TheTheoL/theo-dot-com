@@ -1,11 +1,11 @@
 import React from 'react';
 //import icons
-import clock from '../images';
-import diaphragm from '../images';
-import money from '../images';
-import teamwork from '../images';
+import clock from '../images/clock.svg';
+import diaphragm from '../images/diaphragm.svg';
+import money from '../images/money.svg';
+import teamwork from '../images/teamwork.svg';
 
-import react from '../images';
+import react from '../images/react.jpg';
 //Styles
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
@@ -17,7 +17,7 @@ export default function ServicesSection() {
     return (
         <Services variants={scrollReveal} animate={controls} ref={element} initial={'hidden'}>
             <Description>
-                <h2>High <span>quality</span> development of websites and web applications using <span id='react'></span>React JS</h2>
+                <h2>High <span>quality</span> development of websites and web applications using <span className='react'>React JS</span>.</h2>
                 <Cards>
                     <Card>
                         <div className="icon">
@@ -50,7 +50,7 @@ export default function ServicesSection() {
                 </Cards>
             </Description>
             <Image>
-                <img src={react} alt="fancy camera" />
+                <img src={react} alt="code" />
             </Image>
         </Services>
     )
@@ -60,7 +60,10 @@ export default function ServicesSection() {
 const Services = styled(About)`
 color: black;
 h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    .react {
+        color: #61DBFB;
+    }
 }
 p {
     width: 70%;

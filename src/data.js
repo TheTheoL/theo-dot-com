@@ -1,7 +1,8 @@
 export const data = [{
         id: 1,
         title: "Interactive Registration Form",
-        image: "./img/interactiveform.png"
+        image: "./img/interactiveform.png",
+        live_page: "https://thetheol.github.io/Interactive-Registration-Form/"
     },
     {
         id: 2,
@@ -30,7 +31,7 @@ export const data = [{
     },
     {
         id: 7,
-        title: "Music Player",
+        title: "React Music Player",
         image: "./img/musicplayer.png"
     },
     {
