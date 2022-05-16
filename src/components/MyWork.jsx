@@ -42,7 +42,7 @@ export const MyWork = () => {
                                 <motion.img src={data.image} alt="photo" />
                                 <div className="icons">
 
-                                    <a href={data.live_page} target="_blank"><h3>{data.title}</h3></a>
+                                    <a href={data.GitHub} target="_blank"><h3>{data.title}</h3></a>
                                 </div>
 
                             </motion.div>
