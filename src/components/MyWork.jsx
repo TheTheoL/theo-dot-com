@@ -25,7 +25,7 @@ export const MyWork = () => {
         >
             <h1 className='title'>My Work</h1>
             <div className='intro'>
-                <p>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. Click the titles to go to each projects GitHub live page</p>
+                <p>Welcome to my work page! These projects show off my HTML, CSS (and CSS libraries), JavaScript, and React JS skills. Click the titles to go to each projects GitHub page.</p>
             </div>
             <motion.div
                 ref={carousel}

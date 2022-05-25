@@ -38,17 +38,17 @@ const StyledNav = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #0c0c0c;
+    background: white;
     opacity: 0.75;
     padding: 0 10rem;
     position: sticky;
     top: 0;
     z-index: 10;
     a {
-        color: white;
+        color: black;
         text-decoration: none;
         font-weight: bold;
-        
+        font-size: 1.5rem;
        
     }
     ul {
@@ -56,7 +56,7 @@ const StyledNav = styled.div`
         list-style: none;
     }
     #logo {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         font-family: 'Lobster', cursive;
        
     }

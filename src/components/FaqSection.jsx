@@ -11,7 +11,7 @@ export default function FaqSection() {
     return (
         <Faq variants={scrollReveal} ref={element} animate={controls} initial={'hidden'}>
             <h2>
-                Any Questions<span>FAQ</span>
+                Commonly Asked Questions<span>FAQ</span>
             </h2>
             <AnimateSharedLayout>
                 <Toggle title='How Do You Start?'>

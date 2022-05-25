@@ -19,34 +19,11 @@ export default function ServicesSection() {
             <Description>
                 <h2>High <span>quality</span> development of websites and web applications using <span className='react'>React JS</span>.</h2>
                 <Cards>
-                    <Card>
-                        <div className="icon">
-                            <img src={clock} alt="a clock" />
-                            <h3>Efficient</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={teamwork} alt="teamwork" />
-                            <h3>Teamwork</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={diaphragm} alt="a diaphragm" />
-                            <h3>Diaphragm</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
-                    <Card>
-                        <div className="icon">
-                            <img src={money} alt="money" />
-                            <h3>Affordable</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </Card>
+                    <div>
+                        <p>
+                            React is a wonderful Javascript library that allows you to create amazing UI. I trust it to be able to execute and turn what I design into a fast and sharp website and application.
+                        </p>
+                    </div>
                 </Cards>
             </Description>
             <Image>
