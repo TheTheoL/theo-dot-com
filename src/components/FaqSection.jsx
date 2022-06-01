@@ -11,26 +11,35 @@ export default function FaqSection() {
     return (
         <Faq variants={scrollReveal} ref={element} animate={controls} initial={'hidden'}>
             <h2>
-                Commonly Asked Questions<span>FAQ</span>
+                My Resume<span>EXPERIENCE</span>
             </h2>
             <AnimateSharedLayout>
-                <Toggle title='How Do You Start?'>
+                <Toggle title='About Me'>
+                    <div className="question">
+                        <div className="answer">
+                            <p>Ambitious and goal-oriented professional with a strong academic background expanding my career as a front-end developer. Strengths include my ability to self-manage while maintaining close communication with my fellow front end developers, XD designers, and business partners and consistently having a positive outlook. My close attention to detail and organization on all fronts lends itself to a seamless handoff to other members of the project team.</p>
+                        </div>
+                    </div>
+                </Toggle>
+                <Toggle title='Education'>
                     <div className="question">
 
                         <div className="answer">
-                            <p>I start by getting to know my clients and what their creative and business needs are. Whither they need a website for their business or personal brand, I want to make sure I take the time to ask the right questions and work with them so they get a unique experiene working with me and getting a final product that is specifically tailored to them.</p>
+                            <div>
+                                <p>Master of Science in Marketing</p>
+                                <span>Southern New Hampshire University</span>
+                            </div>
+
+                            <div>
+                                <p>Bachelor of Arts in English and Writing</p>
+                                <span>Suffolk University, Boston MA</span>
+                            </div>
                         </div>
 
                     </div>
                 </Toggle>
-                <Toggle title='Daily Schedule'>
-                    <div className="question">
-                        <div className="answer">
-                            <p>I love my work and typically have a Monday-Saturday work week. It depends on what projects I have in the works and during my free time I like to learn new things that help me enhance my developer skills.</p>
-                        </div>
-                    </div>
-                </Toggle>
-                <Toggle title="What Skills Do You Have?">
+
+                <Toggle title="Skills">
                     <div className="question">
                         <div className="answer">
                             <p>My skills are in frontend development but I also have knowledge in backend work. HTML, CSS, and JavaScript are the foundations of web and app developement and I excel on all fronts specializing in React JS.</p>
@@ -71,7 +80,7 @@ const Faq = styled(About)`
         cursor: pointer;
     }
     .answer {
-        padding: 1rem 0rem;
+        padding: 0.5rem 0rem;
         p {
             padding: 0.5rem 0rem;
         }
